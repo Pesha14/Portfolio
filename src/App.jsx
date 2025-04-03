@@ -253,7 +253,7 @@ function App() {
                 <p className="text-gray-300">Exploring New Technologies</p>
               </div>
               <div className="p-4">
-                <Github className="w-8 h-8 text-purple-400 mx-auto mb-3" />
+                 <Github className="w-8 h-8 text-purple-400 mx-auto mb-3" />
                 <p className="text-gray-300">Contributing to Developer Communities</p>
               </div>
               <div className="p-4">
