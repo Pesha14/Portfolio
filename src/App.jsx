@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Mail, ExternalLink, Code2, Database, Server, Briefcase, GraduationCap, Heart, Users, PenTool as Tool } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Server, Briefcase, GraduationCap, Heart, Users, PenTool as Tool, ChevronDown } from 'lucide-react';
 
 function App() {
   return (
@@ -25,12 +25,16 @@ function App() {
             </div>
           </div>
         </div>
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="flex flex-col items-center">
+            <span className="text-sm text-gray-400 mb-2">Scroll Down</span>
+            <ChevronDown className="w-6 h-6 text-blue-400" />
+          </div>
+        </div>
       </header>
 
       {/* About Section */}
-
-
-
       <section className="py-20 bg-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">About Me</h2>
@@ -40,28 +44,28 @@ function App() {
               With experience in both front-end and back-end development, I create scalable, user-friendly solutions
               that solve real-world problems.
             </p>
-            
           </div>
         </div>
       </section>
 
       {/* Technical Skills Section */}
-
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Technical Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Code2 className="w-8 h-8 text-blue-400 mr-3" />
                 <h3 className="text-xl font-semibold">Programming Languages</h3>
               </div>
               <ul className="text-gray-300 space-y-2">
-                <li>• C#, JavaScript, Node.js, Express.js</li>
+                <li>• C#, JavaScript, Node.js, Express</li>
                 <li>• React.js, Vite, HTML, CSS</li>
-                <li>• Scratch, Arduino, Pico</li>
+                <li>• Arduino, Pico</li>
               </ul>
             </div>
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Server className="w-8 h-8 text-purple-400 mr-3" />
@@ -73,6 +77,7 @@ function App() {
                 <li>• User Interface Design</li>
               </ul>
             </div>
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Database className="w-8 h-8 text-green-400 mr-3" />
@@ -80,10 +85,11 @@ function App() {
               </div>
               <ul className="text-gray-300 space-y-2">
                 <li>• MySQL</li>
-                <li>• MSSQL (Entity Framework)</li>
+                <li>• MSSQL(Entity Framework) </li>
                 <li>• Database Design & Optimization</li>
               </ul>
             </div>
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Tool className="w-8 h-8 text-yellow-400 mr-3" />
@@ -95,6 +101,7 @@ function App() {
                 <li>• GitHub Version Control</li>
               </ul>
             </div>
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-red-400 mr-3" />
@@ -107,19 +114,18 @@ function App() {
                 <li>• Problem Solving</li>
               </ul>
             </div>
+            
           </div>
         </div>
       </section>
 
       {/* Work Experience */}
-
-
       <section className="py-20 bg-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Work Experience</h2>
           <div className="max-w-4xl mx-auto space-y-12">
-            
-          <div className="bg-gray-900 p-8 rounded-lg">
+
+            <div className="bg-gray-900 p-8 rounded-lg">
 
               <div className="flex items-center mb-4">
                 <Briefcase className="w-6 h-6 text-blue-400 mr-3" />
@@ -138,7 +144,7 @@ function App() {
                 <Briefcase className="w-6 h-6 text-blue-400 mr-3" />
                 <h3 className="text-2xl font-semibold">SwizzSoft Systems</h3>
               </div>
-              <p className="text-xl text-gray-300 mb-4">Software Developer (Volunteering)</p>
+              <p className="text-xl text-gray-300 mb-4">Software Developer </p>
               <ul className="text-gray-300 space-y-2">
                 <li>• Contributed to the development of a Co-Banking application</li>
                 <li>• Gained experience in software development processes</li>
@@ -151,7 +157,7 @@ function App() {
                 <GraduationCap className="w-6 h-6 text-purple-400 mr-3" />
                 <h3 className="text-2xl font-semibold">Oasis Mathare</h3>
               </div>
-              <p className="text-xl text-gray-300 mb-4">Trainer</p>
+              <p className="text-xl text-gray-300 mb-4">Trainer </p>
               <ul className="text-gray-300 space-y-2">
                 <li>• Delivered training in Basic Computer Skills</li>
                 <li>• Taught Scratch Programming and Pico Coding</li>
@@ -161,22 +167,14 @@ function App() {
             </div>
 
           </div>
-
         </div>
       </section>
 
-
-
       {/* Projects Section */}
-
-
-
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-
-
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" 
@@ -191,9 +189,7 @@ function App() {
                 </p>
                 
               </div>
-
             </div>
-
 
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img 
@@ -208,37 +204,28 @@ function App() {
                 </p>
                 
               </div>
-
             </div>
-
 
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80" 
-                alt="Students Management System"
+                alt="Student Management System"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Student Management System</h3>
                 <p className="text-gray-300 mb-4">
-                  An ASP.NET web application for managing students data, Exams, and performance tracking.
+                  An ASP.NET web application for managing Students data, Exams, and performance tracking.
                 </p>
-                
+               
               </div>
-
             </div>
-
 
           </div>
         </div>
       </section>
 
-
-
       {/* Hobbies Section */}
-
-
-
       <section className="py-20 bg-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Hobbies & Interests</h2>
@@ -253,7 +240,7 @@ function App() {
                 <p className="text-gray-300">Exploring New Technologies</p>
               </div>
               <div className="p-4">
-                 <Github className="w-8 h-8 text-purple-400 mx-auto mb-3" />
+                <Github className="w-8 h-8 text-purple-400 mx-auto mb-3" />
                 <p className="text-gray-300">Contributing to Developer Communities</p>
               </div>
               <div className="p-4">
@@ -266,9 +253,6 @@ function App() {
       </section>
 
       {/* Contact Section */}
-
-
-
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Get In Touch</h2>
@@ -281,7 +265,7 @@ function App() {
               <Mail className="w-6 h-6 text-blue-400" />
               <a href="mailto:peshaencok91@gmail.com" 
                 className="text-blue-400 hover:text-blue-300 text-lg">
-                Email: peshaenock91@gmail.com
+                peshaenock91@gmail.com
               </a>
             </div>
           </div>
