@@ -105,6 +105,7 @@ function App() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Technical Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Code2 className="w-8 h-8 text-blue-400 mr-3" />
@@ -116,6 +117,7 @@ function App() {
                 <li>• Arduino, Pico</li>
               </ul>
             </div>
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Server className="w-8 h-8 text-purple-400 mr-3" />
@@ -127,6 +129,7 @@ function App() {
                 <li>• User Interface Design</li>
               </ul>
             </div>
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Database className="w-8 h-8 text-green-400 mr-3" />
@@ -138,6 +141,7 @@ function App() {
                 <li>• Database Design & Optimization</li>
               </ul>
             </div>
+
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Tool className="w-8 h-8 text-yellow-400 mr-3" />
@@ -149,6 +153,7 @@ function App() {
                 <li>• GitHub Version Control</li>
               </ul>
             </div>
+            
             <div className="bg-gray-800 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-red-400 mr-3" />
