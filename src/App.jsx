@@ -195,7 +195,7 @@ function App() {
                 <Briefcase className="w-6 h-6 text-blue-400 mr-3" />
                 <h3 className="text-2xl font-semibold">SwizzSoft Systems</h3>
               </div>
-              <p className="text-xl text-gray-300 mb-4">Software Developer (Volunteering)</p>
+              <p className="text-xl text-gray-300 mb-4">Software Developer </p>
               <ul className="text-gray-300 space-y-2">
                 <li>• Contributed to the development of a Co-Banking application</li>
                 <li>• Gained experience in software development processes</li>
@@ -208,10 +208,10 @@ function App() {
                 <GraduationCap className="w-6 h-6 text-purple-400 mr-3" />
                 <h3 className="text-2xl font-semibold">Oasis Mathare</h3>
               </div>
-              <p className="text-xl text-gray-300 mb-4">Trainer (December 2023 – End Of May 2024)</p>
+              <p className="text-xl text-gray-300 mb-4">Trainer </p>
               <ul className="text-gray-300 space-y-2">
                 <li>• Delivered training in Basic Computer Skills</li>
-                <li>• Taught Scratch Programming and Pico Coding</li>
+                <li>• Taught Pico Programming and Scratch.</li>
                 <li>• Instructed ASP.NET Development</li>
                 <li>• Designed course materials and practical exercises</li>
               </ul>
