@@ -211,7 +211,7 @@ function App() {
               <p className="text-xl text-gray-300 mb-4">Trainer </p>
               <ul className="text-gray-300 space-y-2">
                 <li>• Delivered training in Basic Computer Skills</li>
-                <li>• Taught Pico Programming and Scratch.</li>
+                <li>• Taught Pico Programming and Scratch</li>
                 <li>• Instructed ASP.NET Development</li>
                 <li>• Designed course materials and practical exercises</li>
               </ul>
@@ -265,7 +265,7 @@ function App() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Student Management System</h3>
                 <p className="text-gray-300 mb-4">
-                  An ASP.NET web application for managing Students data, Exams, and performance tracking.
+                  An ASP.NET web application for managing Students data, Exams and performance tracking.
                 </p>
                
               </div>
@@ -281,10 +281,7 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Hobbies & Interests</h2>
           <div className="max-w-3xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="p-4">
-                <Heart className="w-8 h-8 text-red-400 mx-auto mb-3" />
-                <p className="text-gray-300">Photography</p>
-              </div>
+              
               <div className="p-4">
                 <Code2 className="w-8 h-8 text-blue-400 mx-auto mb-3" />
                 <p className="text-gray-300">Exploring New Technologies</p>
