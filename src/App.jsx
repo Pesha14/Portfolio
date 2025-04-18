@@ -4,30 +4,72 @@ import { Github, Linkedin, Mail, ExternalLink, Code2, Database, Server, Briefcas
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white">
-      {/* Hero Section - Enhanced Scroll Indicator */}
+      {/* Enhanced Hero Section */}
       <header className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-gray-900"></div>
+        {/* Dynamic background with particles */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20 transform scale-105 animate-gradient"></div>
+          <div className="absolute inset-0 bg-gradient-radial from-transparent via-black/80 to-black"></div>
+          <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        </div>
+
+        {/* Animated glowing orbs */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-glow"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '2s' }}></div>
+        </div>
+
+        {/* Main content */}
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient">
-              Pesha Enock
-            </h1>
-            <p className="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-12 relative group">
+              {/* Decorative elements */}
+              <div className="absolute -inset-x-10 -inset-y-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-2xl group-hover:opacity-75 transition-opacity duration-500"></div>
+              <div className="relative">
+                <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-8 transform group-hover:scale-150 transition-transform duration-500"></div>
+                <h1 className="text-8xl md:text-9xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient tracking-tight leading-none">
+                  Pesha Enock
+                </h1>
+                <div className="w-32 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full mt-8 transform group-hover:scale-150 transition-transform duration-500"></div>
+              </div>
+            </div>
+            
+            <p className="text-3xl md:text-4xl text-gray-300 mb-12 font-light leading-relaxed glass-effect p-8 rounded-3xl transform hover:scale-105 transition-transform duration-500">
               Full Stack Developer & Software Engineer
             </p>
-            <div className="flex justify-center gap-6">
-              <a href="https://github.com/Pesha14" target="_blank" rel="noopener noreferrer" 
-                className="p-3 bg-gray-800/50 backdrop-blur rounded-full hover:bg-gray-700 transition-all hover:scale-110">
-                <Github className="w-7 h-7" />
-              </a>
+
+            <div className="flex flex-col items-center gap-8 mt-16">
+              <div className="flex justify-center gap-6">
+                <a href="https://github.com/Pesha14" target="_blank" rel="noopener noreferrer" 
+                  className="p-4 bg-gray-800/50 backdrop-blur rounded-2xl hover:bg-gray-700/50 transition-all hover:scale-110 hover:shadow-glow group">
+                  <Github className="w-8 h-8 group-hover:text-blue-400 transition-colors" />
+                </a>
+                
+                <a href="mailto:peshaenock91@gmail.com"
+                  className="p-4 bg-gray-800/50 backdrop-blur rounded-2xl hover:bg-gray-700/50 transition-all hover:scale-110 hover:shadow-glow group">
+                  <Mail className="w-8 h-8 group-hover:text-blue-400 transition-colors" />
+                </a>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-4 max-w-2xl">
+                <span className="px-6 py-2 bg-blue-500/10 text-blue-300 rounded-full text-sm font-medium backdrop-blur hover:bg-blue-500/20 transition-colors">React.js</span>
+                <span className="px-6 py-2 bg-purple-500/10 text-purple-300 rounded-full text-sm font-medium backdrop-blur hover:bg-purple-500/20 transition-colors">Node.js</span>
+                <span className="px-6 py-2 bg-green-500/10 text-green-300 rounded-full text-sm font-medium backdrop-blur hover:bg-green-500/20 transition-colors">C#</span>
+                <span className="px-6 py-2 bg-pink-500/10 text-pink-300 rounded-full text-sm font-medium backdrop-blur hover:bg-pink-500/20 transition-colors">ASP.NET</span>
+                <span className="px-6 py-2 bg-yellow-500/10 text-yellow-300 rounded-full text-sm font-medium backdrop-blur hover:bg-yellow-500/20 transition-colors">JavaScript</span>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Enhanced scroll indicator */}
         <div className="absolute bottom-12 left-1/2 animate-float">
           <div className="flex flex-col items-center space-y-4">
-            <span className="text-sm text-blue-400 font-medium tracking-wider uppercase">Scroll Down</span>
-            <div className="p-2 rounded-full bg-blue-500/10 animate-pulse-glow">
+            <span className="text-sm text-blue-400 font-medium tracking-wider uppercase glass-effect px-6 py-2 rounded-full hover:text-blue-300 transition-colors">
+              Explore My Work
+            </span>
+            <div className="p-2 rounded-full bg-blue-500/10 animate-pulse-glow glass-effect">
               <div className="p-2 rounded-full bg-blue-500/20">
                 <ChevronDown className="w-6 h-6 text-blue-400" />
               </div>
