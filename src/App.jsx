@@ -64,18 +64,20 @@ function App() {
         </div>
 
         {/* Enhanced scroll indicator */}
-        <div className="absolute bottom-12 left-1/2 animate-float">
-          <div className="flex flex-col items-center space-y-4">
-            <span className="text-sm text-blue-400 font-medium tracking-wider uppercase glass-effect px-6 py-2 rounded-full hover:text-blue-300 transition-colors">
-              Explore My Work
-            </span>
-            <div className="p-2 rounded-full bg-blue-500/10 animate-pulse-glow glass-effect">
-              <div className="p-2 rounded-full bg-blue-500/20">
-                <ChevronDown className="w-6 h-6 text-blue-400" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="absolute bottom-6 left-1/2 animate-float transform -translate-x-1/2 scale-75">
+  <div className="flex flex-col items-center space-y-1">
+    <span className="text-[10px] font-medium uppercase tracking-wider text-blue-400 hover:text-blue-300 transition-colors glass-effect px-3 py-0.5 rounded-full">
+      Explore
+    </span>
+    <div className="p-1 rounded-full bg-blue-500/10 animate-pulse-glow glass-effect">
+      <div className="p-1 rounded-full bg-blue-500/20">
+        <ChevronDown className="w-3 h-3 text-blue-400" />
+      </div>
+    </div>
+  </div>
+</div>
+
+        
       </header>
 
       {/* About Section */}
